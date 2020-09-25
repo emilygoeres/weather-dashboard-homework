@@ -15,7 +15,6 @@ function saveCity() {
   $("#listCityName").append("<li onclick='weatherInfo(this)'>" + cityName + "</li>");
   $('#cityName').val("");
   weatherInfo(cityName);
-  fiveDayWeatherInfo(cityName);
   cityFromLocal.push(cityName)
   localStorage.setItem("city",JSON.stringify(cityFromLocal))
 }
@@ -25,6 +24,7 @@ function saveCity() {
 
 function weatherInfo(c) {
   cityName = c.innerHTML || c;
+  fiveDayWeatherInfo(cityName);
 
   // Here we are building the URL we need to query the database
   var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
@@ -121,7 +121,7 @@ function UVInfo(lat, lon) {
 
       // Log the queryURL
       console.log(response);
-      $("#UVInfo").append("UVInfo" + response.value)
+      $("#UVInfo").html("UVInfo" + response.value)
     })
 }
 
