@@ -4,16 +4,20 @@
 <head>ls
   <meta charset="utf-8">
   <title>Weather Dashboard</title>
-  <style type="">
-
-  </style>
-  <link rel="stylesheet" href="./style.css">
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 <!-- Made it so you can type the city name in and it will save below and allow you to click the city name for the weather info -->
 
 <body>
-  <div style="float:left;width:300px;height:400px;background:#ccc;margin-right:20px;">
+  <header class="bg-dark text-light">
+    <h1>Weather Forecast</h1>
+  </header>
+  <div class= "container">
+  <div id="cougs">
     City Name:<br>
     <input id="cityName" type="text" />
     <button onclick="saveCity()">Submit</button>
@@ -30,15 +34,25 @@
   <div id="UVInfo"></div>
 
   <div id="container" class="d-flex flex-wrap"></div>
-
-
+  </div>
+  <footer class="bg-dark text-light text-center">
+    &copy;Emily Goeres
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
   <script src="script.js" type="text/javascript">
 
   </script>
+
 </body>
 
 </html>
-
-

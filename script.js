@@ -102,7 +102,7 @@ function fiveDayWeatherInfo(cityName) {
                 `
       }
       console.log(htmlString)
-      $("#container").append(htmlString)
+      $("#container").html(htmlString)
 
 
     });

@@ -10,6 +10,19 @@ body {
  
 }
 
-.body {
-    color:#981E32 
+#container {
+    color:#981E32; 
+}
+body {
+    color: white;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#cougs {
+    color: white;
+    margin: auto;
 }
