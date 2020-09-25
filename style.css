@@ -1,0 +1,15 @@
+li{cursor:pointer}
+body {
+    background-color:#53565A;
+    
+}
+#portfolioimage {
+    max-width: 350px;
+    max-height: 350px;
+    padding: 5%;
+ 
+}
+
+.body {
+    color:#981E32 
+}
